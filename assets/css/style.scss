@@ -528,7 +528,13 @@ h3 {
 }
 
 .card__media--cafeh {
-  background: #FFFFED;
+  background: #6F0922;
+}
+
+.card__media--cafeh img {
+  width: 140px;
+  object-fit: cover;
+  clip-path: circle(42% at 50% 50%);
 }
 
 .card__media--eilo {
