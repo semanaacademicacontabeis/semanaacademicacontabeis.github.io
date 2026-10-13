@@ -25,20 +25,45 @@ hero_lead: De 19 a 23 de outubro, uma programação que aproxima estudantes, pro
   </div>
 </section>
 
-<section class="section section--white" aria-labelledby="destaques-title">
+<section class="section section--white" id="programacao-semanal" aria-labelledby="destaques-title">
   <div class="shell">
     <div class="section__heading">
-      <p class="eyebrow">DESTAQUES</p>
-      <h2 id="destaques-title">Uma semana entre mercado, universidade e sociedade.</h2>
-      <p>Cada dia propõe um novo ponto de vista sobre a formação e a atuação em Ciências Contábeis.</p>
+      <p class="eyebrow">PROGRAMAÇÃO DA SEMANA</p>
+      <h2 id="destaques-title">Todos os dias, eventos, imagens e responsáveis.</h2>
+      <p>Confira a agenda oficial divulgada pelo curso de Ciências Contábeis da UDESC Alto Vale.</p>
     </div>
-    <div class="card-grid">
-      {% include card.html class="content-card--speaker" eyebrow="19 OUT · 19H" image="/assets/images/cafeh-contabilidade.png" image_alt="CAFEH Contabilidade" media_class="card__media--cafeh" title="A revolução da IA na Contabilidade: do Mercado à Prática do Escritório" speaker="A revolução da IA na Contabilidade: do Mercado à Prática do Escritório" %}
-      {% include card.html class="content-card--speaker" eyebrow="19 OUT · 20H30" image="/assets/images/eilo-gestao-contabil-preto.png" image_alt="Eilo Gestão Contábil" media_class="card__media--eilo" title="Reforma Tributária: uma nova era para empresas e profissionais" speaker="Reforma Tributária: uma nova era para empresas e profissionais" %}
-      {% include card.html eyebrow="21 OUT" title="36º SIC" body="Seminário de Iniciação Científica, com a Direção de Pesquisa e Pós-Graduação." %}
-      {% include card.html eyebrow="22 OUT" title="Programa GISP" body="Incentivo a projetos e impacto social nas comunidades." %}
-      {% include card.html eyebrow="23 OUT" title="Visita ao TCE/SC" body="Uma aproximação com o Tribunal da Governança Pública Catarinense." %}
-      {% include card.html eyebrow="AGENDA COMPLETA" title="Cinco dias, uma jornada" body="Consulte todos os horários, temas, convidados e informações pendentes." %}
+    <div class="home-schedule">
+      {% for dia in site.data.programacao %}
+        <article class="day-feature">
+          <figure class="day-feature__visual">
+            <img src="{{ dia.image | relative_url }}" alt="{{ dia.image_alt }}" loading="lazy">
+            <figcaption>{{ dia.weekday }} · {{ dia.date }}</figcaption>
+          </figure>
+          <div class="day-feature__content">
+            <header class="day-feature__header">
+              <p class="card__eyebrow">DIA {{ dia.day }} · {{ dia.weekday }}</p>
+              <h3>{{ dia.date }}</h3>
+            </header>
+            <div class="day-feature__events">
+              {% for evento in dia.events %}
+                <section class="day-event">
+                  <p class="day-event__time">{{ evento.time }}</p>
+                  <div class="day-event__copy">
+                    <p class="day-event__type">{{ evento.type }}</p>
+                    <h4>{{ evento.title }}</h4>
+                    <p class="day-event__responsible"><strong>Responsável:</strong> {{ evento.responsible }}</p>
+                    {% if evento.institution %}<p class="day-event__meta">{{ evento.institution }}</p>{% endif %}
+                    {% if evento.location %}<p class="day-event__meta">{{ evento.location }}</p>{% endif %}
+                  </div>
+                </section>
+              {% endfor %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    <div class="home-schedule__footer">
+      <a class="button button--primary" href="{{ '/programacao/' | relative_url }}">Ver programação completa <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true"></a>
     </div>
   </div>
 </section>
