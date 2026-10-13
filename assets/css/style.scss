@@ -541,6 +541,22 @@ h3 {
   background: #000000;
 }
 
+.card__media--cream {
+  background: #fffef0;
+}
+
+.card__media--sic {
+  background: #4b9c93;
+}
+
+.card__media--sic img {
+  width: min(100%, 300px);
+}
+
+.card__media--gisp img {
+  width: 140px;
+}
+
 .card__speaker {
   color: var(--muted);
   font-size: 16px;
