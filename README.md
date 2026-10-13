@@ -19,7 +19,7 @@ bundle install
 bundle exec jekyll serve --host 127.0.0.1 --port 4000 --livereload
 ```
 
-Abra `http://localhost:4000/semana-academia-contabeis/`.
+Abra `http://localhost:4000/`.
 
 Se o terminal já estava aberto durante a instalação do Ruby, feche-o e abra novamente para atualizar o `PATH`.
 
@@ -31,5 +31,5 @@ Antes da publicação oficial, confirme local das atividades, horários de 21 a 
 
 O workflow em `.github/workflows/pages.yml` publica automaticamente no GitHub Pages quando há push para `main`.
 
-Site publicado: <https://theospalmer.github.io/semana-academia-contabeis/>
+Site publicado: <https://semanaacademicacontabeis.github.io/>
 

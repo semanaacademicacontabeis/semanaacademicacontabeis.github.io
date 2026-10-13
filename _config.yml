@@ -2,8 +2,8 @@ title: Semana Acadêmica de Ciências Contábeis 2026
 description: Programação acadêmica de Ciências Contábeis da UDESC com palestras, pesquisa, extensão e visita técnica
 lang: pt-BR
 timezone: America/Sao_Paulo
-url: "https://theospalmer.github.io"
-baseurl: /semana-academia-contabeis
+url: "https://semanaacademicacontabeis.github.io"
+baseurl: ""
 permalink: pretty
 markdown: kramdown
 
