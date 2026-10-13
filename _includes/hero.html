@@ -1,0 +1,28 @@
+<section class="hero{% if page.home %} hero--home{% endif %}">
+  <div class="hero__inner shell">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--pill">{{ page.hero_badge }}</p>
+      <h1>{{ page.hero_title }}</h1>
+      <p class="hero__lead">{{ page.hero_lead }}</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#detalhes">
+          {% if page.home %}Explorar programação{% else %}Ver detalhes{% endif %}
+          <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true">
+        </a>
+        {% unless page.home %}
+          <a class="button button--ghost" href="{{ '/' | relative_url }}">
+            Voltar ao início
+            <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true">
+          </a>
+        {% endunless %}
+      </div>
+    </div>
+
+    <div class="hero__date-card" aria-label="19 a 23 de outubro de 2026">
+      <span>19—23</span>
+      <strong>OUTUBRO</strong>
+      <p>UDESC · 2026</p>
+    </div>
+  </div>
+</section>
+

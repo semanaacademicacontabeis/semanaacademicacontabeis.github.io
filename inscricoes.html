@@ -1,0 +1,36 @@
+---
+layout: default
+title: Inscrições
+nav: inscricoes
+description: Informações de inscrição para a Semana Acadêmica de Ciências Contábeis 2026 da UDESC.
+hero_badge: Participação · 19 a 23 de outubro
+hero_title: Organize sua participação na Semana Acadêmica.
+hero_lead: O formulário, os prazos e as regras de inscrição serão publicados assim que forem confirmados pela organização.
+permalink: /inscricoes/
+---
+
+{% include hero.html %}
+
+<section class="section shell" id="detalhes">
+  <div class="section__heading">
+    <p class="eyebrow">INSCRIÇÕES</p>
+    <h2>Informações em atualização.</h2>
+    <p>O material fornecido ainda não apresenta formulário, período de inscrição, número de vagas ou regras de participação.</p>
+  </div>
+
+  <div class="status-panel">
+    <div class="status-panel__copy">
+      <p class="card__eyebrow">CADASTRO A CONFIRMAR</p>
+      <h3>Link de inscrição ainda não divulgado</h3>
+      <p>Quando o canal oficial for informado, esta página reunirá o formulário e as orientações completas.</p>
+    </div>
+    <a class="button button--primary" href="{{ '/contato/' | relative_url }}">Ver contato <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true"></a>
+  </div>
+
+  <div class="card-grid feature-cards">
+    {% include card.html eyebrow="PÚBLICO" title="Quem pode participar?" body="Público-alvo e eventual abertura à comunidade externa aguardam confirmação." %}
+    {% include card.html eyebrow="PRAZO" title="Quando se inscrever?" body="Datas de início e encerramento das inscrições ainda não foram informadas." %}
+    {% include card.html eyebrow="CONDIÇÕES" title="Vagas e valores" body="Quantidade de vagas, gratuidade e critérios de seleção ainda não foram divulgados." %}
+  </div>
+</section>
+

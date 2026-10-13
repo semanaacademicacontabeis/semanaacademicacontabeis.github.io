@@ -1,0 +1,12 @@
+<article class="content-card{% if include.class %} {{ include.class }}{% endif %}">
+  {% if include.eyebrow %}<p class="card__eyebrow">{{ include.eyebrow }}</p>{% endif %}
+  {% if include.image %}
+    <div class="card__media{% if include.media_class %} {{ include.media_class }}{% endif %}">
+      <img src="{{ include.image | relative_url }}" alt="{{ include.image_alt | default: include.title }}">
+    </div>
+  {% endif %}
+  <h3>{{ include.title }}</h3>
+  {% if include.speaker %}<p class="card__speaker"><strong>Palestrante:</strong> {{ include.speaker }}</p>{% endif %}
+  {% if include.body %}<p>{{ include.body }}</p>{% endif %}
+</article>
+

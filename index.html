@@ -1,0 +1,75 @@
+---
+layout: default
+title: Início
+nav: inicio
+home: true
+description: Cinco dias de conhecimento, pesquisa, extensão e conexões na Semana Acadêmica de Ciências Contábeis 2026 da UDESC.
+hero_badge: Semana Acadêmica · Ciências Contábeis
+hero_title: Contabilidade em movimento. Conhecimento que conecta.
+hero_lead: De 19 a 23 de outubro, uma programação que aproxima estudantes, profissionais, pesquisa, extensão e gestão pública.
+---
+
+{% include hero.html %}
+
+<section class="section shell" id="detalhes">
+  <div class="section__heading">
+    <p class="eyebrow">SEMANA ACADÊMICA · 2026</p>
+    <h2>Cinco dias para ampliar repertórios e transformar decisões.</h2>
+    <p>Inteligência artificial, reforma tributária, gestão, empreendedorismo, iniciação científica, extensão e governança pública em uma agenda plural.</p>
+  </div>
+  <div class="metrics" aria-label="Números do evento">
+    <div class="metric"><strong>05</strong><span>dias de programação</span></div>
+    <div class="metric"><strong>09</strong><span>atividades previstas</span></div>
+    <div class="metric"><strong>01</strong><span>visita técnica</span></div>
+    <div class="metric"><strong>2026</strong><span>ano da edição</span></div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="destaques-title">
+  <div class="shell">
+    <div class="section__heading">
+      <p class="eyebrow">DESTAQUES</p>
+      <h2 id="destaques-title">Uma semana entre mercado, universidade e sociedade.</h2>
+      <p>Cada dia propõe um novo ponto de vista sobre a formação e a atuação em Ciências Contábeis.</p>
+    </div>
+    <div class="card-grid">
+      {% include card.html class="content-card--speaker" eyebrow="19 OUT · 19H" image="/assets/images/cafeh-contabilidade.png" image_alt="CAFEH Contabilidade" media_class="card__media--cafeh" title="A revolução da IA na Contabilidade: do Mercado à Prática do Escritório" speaker="A revolução da IA na Contabilidade: do Mercado à Prática do Escritório" %}
+      {% include card.html class="content-card--speaker" eyebrow="19 OUT · 20H30" image="/assets/images/eilo-gestao-contabil.png" image_alt="Eilo Gestão Contábil" media_class="card__media--eilo" title="Reforma Tributária: uma nova era para empresas e profissionais" speaker="Reforma Tributária: uma nova era para empresas e profissionais" %}
+      {% include card.html eyebrow="21 OUT" title="36º SIC" body="Seminário de Iniciação Científica, com a Direção de Pesquisa e Pós-Graduação." %}
+      {% include card.html eyebrow="22 OUT" title="Programa GISP" body="Incentivo a projetos e impacto social nas comunidades." %}
+      {% include card.html eyebrow="23 OUT" title="Visita ao TCE/SC" body="Uma aproximação com o Tribunal da Governança Pública Catarinense." %}
+      {% include card.html eyebrow="AGENDA COMPLETA" title="Cinco dias, uma jornada" body="Consulte todos os horários, temas, convidados e informações pendentes." %}
+    </div>
+  </div>
+</section>
+
+<section class="section shell" aria-labelledby="informacoes-title">
+  <div class="section__heading">
+    <p class="eyebrow">INFORMAÇÕES DO EVENTO</p>
+    <h2 id="informacoes-title">Encontre o que você precisa.</h2>
+    <p>Acesse rapidamente as orientações de participação e os canais institucionais.</p>
+  </div>
+  <div class="card-grid card-grid--four">
+    <a class="content-card content-card--compact content-card--link" href="{{ '/inscricoes/' | relative_url }}">
+      <p class="card__eyebrow">PARTICIPAÇÃO</p>
+      <h3>Inscrições</h3>
+      <p>Formulário, prazos, público e vagas.</p>
+    </a>
+    <a class="content-card content-card--compact content-card--link" href="{{ '/comissao-organizadora/' | relative_url }}">
+      <p class="card__eyebrow">BASTIDORES</p>
+      <h3>Comissão organizadora</h3>
+      <p>Equipe, funções e participação institucional.</p>
+    </a>
+    <a class="content-card content-card--compact content-card--link" href="{{ '/certificado/' | relative_url }}">
+      <p class="card__eyebrow">CERTIFICAÇÃO</p>
+      <h3>Certificado</h3>
+      <p>Critérios, carga horária e emissão.</p>
+    </a>
+    <a class="content-card content-card--compact content-card--link" href="{{ '/contato/' | relative_url }}">
+      <p class="card__eyebrow">ATENDIMENTO</p>
+      <h3>Contato</h3>
+      <p>Canais oficiais e atualizações.</p>
+    </a>
+  </div>
+</section>
+

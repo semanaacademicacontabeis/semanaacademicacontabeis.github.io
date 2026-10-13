@@ -1,0 +1,28 @@
+{% assign current = page.nav | default: 'inicio' %}
+<header class="site-header" data-site-header>
+  <div class="header__inner shell">
+    <a class="brand brand--event" href="{{ '/' | relative_url }}" aria-label="Semana Acadêmica de Ciências Contábeis — início">
+      <img src="{{ '/assets/images/icone-caduceu-transparente.png' | relative_url }}" alt="Ícone da Semana Acadêmica de Ciências Contábeis" width="48" height="48">
+      <span>Ciências Contábeis <strong>2026</strong></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+      <span>Menu</span>
+      <span class="menu-toggle__lines" aria-hidden="true"></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navegação principal" data-primary-nav>
+      <a href="{{ '/' | relative_url }}" {% if current == 'inicio' %}aria-current="page"{% endif %}>Início</a>
+      <a href="{{ '/programacao/' | relative_url }}" {% if current == 'programacao' %}aria-current="page"{% endif %}>Programação</a>
+      <a href="{{ '/inscricoes/' | relative_url }}" {% if current == 'inscricoes' %}aria-current="page"{% endif %}>Inscrições</a>
+      <a href="{{ '/comissao-organizadora/' | relative_url }}" {% if current == 'comissao' %}aria-current="page"{% endif %}>Comissão</a>
+      <a href="{{ '/certificado/' | relative_url }}" {% if current == 'certificado' %}aria-current="page"{% endif %}>Certificado</a>
+      <a href="{{ '/contato/' | relative_url }}" {% if current == 'contato' %}aria-current="page"{% endif %}>Contato</a>
+
+      <a class="button button--primary nav-cta" href="{{ '/programacao/' | relative_url }}">
+        Ver agenda <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true">
+      </a>
+    </nav>
+  </div>
+</header>
+

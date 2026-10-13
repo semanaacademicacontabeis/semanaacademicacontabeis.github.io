@@ -1,0 +1,32 @@
+<article class="content-card schedule-card">
+  <h3>{{ include.title }}</h3>
+  <dl class="schedule-card__details">
+    <div>
+      <dt>Horário:</dt>
+      <dd>{{ include.time | default: 'A confirmar' }}</dd>
+    </div>
+    <div>
+      <dt>Responsável:</dt>
+      <dd>{{ include.responsible | default: 'A confirmar' }}</dd>
+    </div>
+    {% if include.institution %}
+      <div>
+        <dt>Instituição:</dt>
+        <dd>{{ include.institution }}</dd>
+      </div>
+    {% endif %}
+    {% if include.location %}
+      <div>
+        <dt>Local:</dt>
+        <dd>{{ include.location }}</dd>
+      </div>
+    {% endif %}
+    {% if include.description %}
+      <div>
+        <dt>Descrição:</dt>
+        <dd>{{ include.description }}</dd>
+      </div>
+    {% endif %}
+  </dl>
+</article>
+

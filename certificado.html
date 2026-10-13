@@ -1,0 +1,36 @@
+---
+layout: default
+title: Certificado
+nav: certificado
+description: Informações sobre certificação da Semana Acadêmica de Ciências Contábeis 2026 da UDESC.
+hero_badge: Participação e certificação
+hero_title: Tudo sobre o certificado, em um só lugar.
+hero_lead: Critérios, carga horária e forma de emissão serão apresentados após a confirmação oficial da organização.
+permalink: /certificado/
+---
+
+{% include hero.html %}
+
+<section class="section shell" id="detalhes">
+  <div class="section__heading">
+    <p class="eyebrow">CERTIFICADO</p>
+    <h2>Regras de certificação a confirmar.</h2>
+    <p>O material-base não especifica se haverá certificado, qual será a carga horária ou como a presença será registrada.</p>
+  </div>
+
+  <div class="status-panel">
+    <div class="status-panel__copy">
+      <p class="card__eyebrow">EMISSÃO A CONFIRMAR</p>
+      <h3>Orientações ainda não divulgadas</h3>
+      <p>Esta área poderá receber o acesso ao certificado quando a organização definir o processo de emissão.</p>
+    </div>
+    <a class="button button--primary" href="{{ '/contato/' | relative_url }}">Falar com a organização <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true"></a>
+  </div>
+
+  <div class="card-grid feature-cards">
+    {% include card.html eyebrow="PRESENÇA" title="Critério de participação" body="Percentual mínimo de presença e forma de controle ainda precisam ser definidos." %}
+    {% include card.html eyebrow="CARGA HORÁRIA" title="Horas certificadas" body="A carga horária total ou por atividade não consta no material fornecido." %}
+    {% include card.html eyebrow="ACESSO" title="Emissão e consulta" body="Plataforma, prazo de emissão e procedimento para correções ainda serão informados." %}
+  </div>
+</section>
+

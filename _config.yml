@@ -1,0 +1,27 @@
+title: Semana Acadêmica de Ciências Contábeis 2026
+description: Programação acadêmica de Ciências Contábeis da UDESC com palestras, pesquisa, extensão e visita técnica
+lang: pt-BR
+timezone: America/Sao_Paulo
+url: ""
+baseurl: /2026
+permalink: pretty
+markdown: kramdown
+
+event:
+  dates: 19–23 de outubro de 2026
+  short_dates: 19–23 OUT
+  location: UDESC · Santa Catarina
+  email: ""
+
+social:
+  website: https://www.udesc.br/
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
