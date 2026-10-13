@@ -557,6 +557,31 @@ h3 {
   width: 140px;
 }
 
+.card__media--gisp {
+  background: #ffffff;
+}
+
+.card__media--journey {
+  background: var(--canvas);
+}
+
+.card__media--journey img {
+  width: 150px;
+}
+
+.card__media--photo {
+  padding: 0;
+  background: var(--navy);
+}
+
+.card__media--photo img {
+  width: 100%;
+  max-width: none;
+  height: 156px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .card__speaker {
   color: var(--muted);
   font-size: 16px;
