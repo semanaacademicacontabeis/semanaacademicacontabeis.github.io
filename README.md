@@ -19,7 +19,7 @@ bundle install
 bundle exec jekyll serve --host 127.0.0.1 --port 4000 --livereload
 ```
 
-Abra `http://localhost:4000/2026/`.
+Abra `http://localhost:4000/semana-academia-contabeis/`.
 
 Se o terminal já estava aberto durante a instalação do Ruby, feche-o e abra novamente para atualizar o `PATH`.
 
@@ -29,7 +29,7 @@ Antes da publicação oficial, confirme local das atividades, horários de 21 a 
 
 ## Publicação
 
-O workflow em `.github/workflows/pages.yml` publica automaticamente no GitHub Pages quando há push para `main`. No repositório, habilite **Settings → Pages → Source → GitHub Actions**.
+O workflow em `.github/workflows/pages.yml` publica automaticamente no GitHub Pages quando há push para `main`.
 
-Antes da publicação, preencha `url` em `_config.yml` com o domínio do GitHub Pages. Se o repositório não for publicado no caminho `/2026`, ajuste também `baseurl`.
+Site publicado: <https://theospalmer.github.io/semana-academia-contabeis/>
 
