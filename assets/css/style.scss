@@ -688,6 +688,33 @@ h3 {
   object-fit: contain;
 }
 
+.daily-event__media.card__media--eilo {
+  border-color: #000000;
+  background: #000000;
+}
+
+.daily-event__media.card__media--cafeh {
+  border-color: #6f0922;
+  background: #6f0922;
+}
+
+.daily-event__media.card__media--cream {
+  background: #fffef0;
+}
+
+.daily-event__media.card__media--sic {
+  border-color: #4b9c93;
+  background: #4b9c93;
+}
+
+.daily-event__media.card__media--gisp {
+  background: #ffffff;
+}
+
+.daily-event__media.card__media--journey {
+  background: var(--canvas);
+}
+
 .daily-event__media.card__media--cafeh img {
   width: 132px;
 }
