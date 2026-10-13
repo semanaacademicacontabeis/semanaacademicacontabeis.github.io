@@ -5,52 +5,27 @@ nav: programacao
 description: Programação da Semana Acadêmica de Ciências Contábeis 2026 da UDESC, de 19 a 23 de outubro.
 hero_badge: Agenda · 19 a 23 de outubro
 hero_title: Cinco dias. Novas perspectivas todos os dias.
-hero_lead: Navegue pela programação e encontre os temas, convidados e instituições de cada encontro.
+hero_lead: Consulte os horários, temas, responsáveis e instituições de cada atividade da Semana Acadêmica.
 permalink: /programacao/
 ---
 
 {% include hero.html %}
 
-<section class="section shell" id="detalhes">
-  <div class="section__heading">
-    <p class="eyebrow">PROGRAMAÇÃO 2026</p>
-    <h2>Escolha um dia</h2>
-    <p>Os horários que ainda não constam na programação-base estão indicados como “a confirmar”.</p>
-  </div>
+<section class="section section--white" id="detalhes" aria-labelledby="programacao-title">
+  <div class="shell">
+    <div class="section__heading">
+      <p class="eyebrow">PROGRAMAÇÃO 2026</p>
+      <h2 id="programacao-title">Agenda completa por dia.</h2>
+      <p>De 19 a 23 de outubro, acompanhe todas as atividades previstas para a Semana Acadêmica de Ciências Contábeis.</p>
+    </div>
 
-  <div class="switcher day-switcher" data-switcher="schedule" role="tablist" aria-label="Selecionar dia">
-    <button class="is-active" type="button" data-switch="19" role="tab" aria-selected="true"><strong>19</strong><span>Segunda</span></button>
-    <button type="button" data-switch="20" role="tab" aria-selected="false"><strong>20</strong><span>Terça</span></button>
-    <button type="button" data-switch="21" role="tab" aria-selected="false"><strong>21</strong><span>Quarta</span></button>
-    <button type="button" data-switch="22" role="tab" aria-selected="false"><strong>22</strong><span>Quinta</span></button>
-    <button type="button" data-switch="23" role="tab" aria-selected="false"><strong>23</strong><span>Sexta</span></button>
-  </div>
+    {% include daily-program.html %}
 
-  <div class="card-grid schedule-grid" data-schedule-panel="19">
-    {% include schedule-card.html title="A revolução da IA na Contabilidade" time="19:00" responsible="Guilherme Krumennauer" institution="Eilo Gestão Contábil" description="Do mercado à prática do escritório." %}
-    {% include schedule-card.html title="Reforma Tributária" time="20:30" responsible="Moisés Medeiros Junior" institution="CAFEH Contabilidade" description="Uma nova era para empresas e profissionais." %}
-  </div>
-  <div class="card-grid schedule-grid" data-schedule-panel="20" hidden>
-    {% include schedule-card.html title="Associações esportivas como organizações" time="19:00" institution="Santa Catarina Clube" description="Desafios de gestão no Santa Catarina Clube." %}
-    {% include schedule-card.html title="Sala do Empreendedor" time="20:30" responsible="Prefeitura Municipal de Ibirama" institution="Sala do Empreendedor" description="Apresentação da iniciativa municipal." %}
-    {% include schedule-card.html title="Jornada Acadêmica e Profissional" time="21:00" responsible="Jardel Pandini Regueira" description="Encontro com egresso do curso." %}
-  </div>
-  <div class="card-grid schedule-grid" data-schedule-panel="21" hidden>
-    {% include schedule-card.html title="36º SIC — Seminário de Iniciação Científica" time="19:00" responsible="Direção de Pesquisa e Pós-Graduação" institution="UDESC" %}
-  </div>
-  <div class="card-grid schedule-grid" data-schedule-panel="22" hidden>
-    {% include schedule-card.html title="Do potencial ao recurso" time="19:00" responsible="Loriberto Starosky Filho" institution="Programa de Extensão GISP" description="Como as leis de incentivo financiam projetos — e por que tanto dinheiro fica na mesa." %}
-    {% include schedule-card.html title="Programa Valor Social" time="19:00" responsible="Viacredi Alto Vale" institution="Programa de Extensão GISP" description="Projetos que geram impacto social nas comunidades." %}
-  </div>
-  <div class="card-grid schedule-grid" data-schedule-panel="23" hidden>
-    {% include schedule-card.html title="Visita ao TCE/SC" responsible="Tribunal de Contas do Estado de Santa Catarina" location="Rua Bulcão Viana, 90 · CEP 88.020-160 · Florianópolis/SC" description="Visita técnica ao Tribunal da Governança Pública Catarinense." %}
-  </div>
-
-  <div class="callout">
-    <div class="callout__copy">
-      <strong>Informações em atualização</strong>
-      <p>O local das atividades de segunda a quinta, o horário da visita técnica e as orientações de deslocamento ainda precisam de confirmação oficial.</p>
+    <div class="callout">
+      <div class="callout__copy">
+        <strong>Informações em atualização</strong>
+        <p>O local das atividades de segunda a quinta, o horário da visita técnica e as orientações de deslocamento ainda precisam de confirmação oficial.</p>
+      </div>
     </div>
   </div>
 </section>
-
