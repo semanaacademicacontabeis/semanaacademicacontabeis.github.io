@@ -599,15 +599,16 @@ h3 {
 }
 
 .content-card--team {
-  display: grid;
+  display: flex;
   min-height: 0;
-  grid-template-columns: 80px minmax(0, 1fr);
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .content-card--team .card__media {
-  width: 80px;
-  min-height: 80px;
+  width: 104px;
+  min-height: 104px;
   padding: 7px;
   border-color: rgba(0, 99, 63, 0.28);
   border-radius: 50%;
@@ -615,11 +616,12 @@ h3 {
 }
 
 .content-card--team .card__media img {
-  width: 66px;
-  height: 66px;
+  width: 88px;
+  height: 88px;
 }
 
 .content-card--team h3 {
+  width: 100%;
   font-size: 23px;
   line-height: 1.3;
 }
