@@ -723,48 +723,21 @@ b {
   min-height: 0;
 }
 
-.content-card--team {
-  display: flex;
-  min-height: 0;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.content-card--team .card__media {
-  width: 104px;
-  min-height: 104px;
-  padding: 7px;
-  border-color: rgba(0, 99, 63, 0.28);
-  border-radius: 50%;
-  background: var(--cyan-soft);
-}
-
-.content-card--team .card__media img {
-  width: 88px;
-  height: 88px;
-}
-
-.content-card--team .card__media--profile-photo {
-  height: 104px;
+.contributor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 18px 40px;
+  margin: 30px 0 0;
   padding: 0;
-  background: var(--cyan-soft);
+  list-style: none;
 }
 
-.content-card--team .card__media--profile-photo img {
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  border-radius: 50%;
-  object-fit: cover;
-  transform: translate(-7%, 20%) scale(1.45);
-}
-
-.content-card--team h3 {
-  width: 100%;
-  font-size: 23px;
+.contributor-list li {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(18px, 2vw, 23px);
   font-weight: 600;
   line-height: 1.3;
+  text-align: center;
 }
 
 .content-card--accent {

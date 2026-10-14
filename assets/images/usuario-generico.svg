@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title">
-  <title id="title">Ícone genérico de usuário</title>
-  <circle cx="80" cy="80" r="76" fill="#E7F2ED" stroke="#00633F" stroke-width="4"/>
-  <circle cx="80" cy="58" r="27" fill="#00233F"/>
-  <path d="M31 132c5-29 24-45 49-45s44 16 49 45" fill="#00233F"/>
-</svg>
