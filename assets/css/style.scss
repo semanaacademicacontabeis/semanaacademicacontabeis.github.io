@@ -387,48 +387,132 @@ b {
   gap: 12px;
 }
 
-.hero__date-card {
-  display: flex;
-  min-height: 300px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 42px;
+.hero__calendar-card {
+  padding: 28px;
   border-radius: var(--radius-xl);
   background: var(--white);
   color: var(--navy);
   box-shadow: var(--shadow);
 }
 
-.hero__date-card span {
+.event-calendar {
+  display: grid;
+  gap: 18px;
+}
+
+.event-calendar__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.event-calendar__header > div {
+  display: grid;
+  gap: 2px;
+}
+
+.event-calendar__header p {
+  color: var(--cyan);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 18px;
+}
+
+.event-calendar__header h2 {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.event-calendar__header > span {
   color: var(--navy);
   font-family: "Poppins", sans-serif;
-  font-size: clamp(64px, 6vw, 90px);
+  font-size: 28px;
   font-weight: 800;
   line-height: 1;
 }
 
-.hero__date-card strong {
-  margin-top: 12px;
-  color: var(--cyan);
-  font-size: 24px;
-  letter-spacing: 0.18em;
+.event-calendar__weekdays,
+.event-calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
-.hero__date-card p {
-  margin-top: 18px;
+.event-calendar__weekdays span {
   color: var(--muted);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
-.hero:not(.hero--home) .hero__date-card {
-  padding: 34px;
+.event-calendar__days {
+  row-gap: 5px;
 }
 
-.hero:not(.hero--home) .hero__date-card span {
-  font-size: 70px;
-  white-space: nowrap;
+.event-calendar__day {
+  display: grid;
+  min-width: 0;
+  height: 40px;
+  place-items: center;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.event-calendar__day--event {
+  background: rgba(2, 86, 51, 0.14);
+  color: var(--navy);
+  font-weight: 700;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.event-calendar__day--start {
+  border-radius: 999px 0 0 999px;
+}
+
+.event-calendar__day--end {
+  border-radius: 0 999px 999px 0;
+}
+
+.event-calendar__day--start span,
+.event-calendar__day--end span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cyan);
+  color: var(--white);
+}
+
+.event-calendar__day--event:hover,
+.event-calendar__day--event:focus-visible {
+  background: rgba(2, 86, 51, 0.24);
+  outline: none;
+}
+
+.event-calendar__day--event:focus-visible span {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+.event-calendar__caption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.event-calendar__caption span {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  border-radius: 50%;
+  background: var(--cyan);
 }
 
 .section {
@@ -1102,7 +1186,7 @@ b {
   .nav-cta { display: inline-flex; margin: 10px 0 0; }
   .hero__inner,
   .hero--home .hero__inner { grid-template-columns: minmax(0, 1fr); }
-  .hero__date-card { min-height: 240px; }
+  .hero__calendar-card { width: 100%; }
   .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .card-grid,
   .card-grid--four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1126,10 +1210,13 @@ b {
   .hero h1 { font-size: 40px; line-height: 1.12; }
   .hero__lead { font-size: 18px; line-height: 25px; }
   .hero__actions .button--ghost { display: none; }
-  .hero__date-card { min-height: 190px; padding: 28px; border-radius: 22px; }
-  .hero__date-card span { font-size: 66px; }
-  .hero:not(.hero--home) .hero__date-card span { font-size: 66px; }
-  .hero__date-card strong { font-size: 20px; }
+  .hero__calendar-card { padding: 24px 20px; border-radius: 22px; }
+  .event-calendar { gap: 16px; }
+  .event-calendar__header h2 { font-size: 28px; }
+  .event-calendar__header > span { font-size: 26px; }
+  .event-calendar__day { height: 38px; font-size: 13px; }
+  .event-calendar__day--start span,
+  .event-calendar__day--end span { width: 32px; height: 32px; }
 
   .section { padding: 36px 20px; }
   .section__heading { gap: 16px; margin-bottom: 26px; }
