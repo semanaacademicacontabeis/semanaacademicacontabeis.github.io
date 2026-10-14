@@ -745,6 +745,21 @@ b {
   height: 88px;
 }
 
+.content-card--team .card__media--profile-photo {
+  height: 104px;
+  padding: 0;
+  background: var(--cyan-soft);
+}
+
+.content-card--team .card__media--profile-photo img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translate(-7%, 20%) scale(1.45);
+}
+
 .content-card--team h3 {
   width: 100%;
   font-size: 23px;
