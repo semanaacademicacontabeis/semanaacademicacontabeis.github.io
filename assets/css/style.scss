@@ -457,6 +457,9 @@ b {
   background: rgba(2, 86, 51, 0.14);
   color: var(--navy);
   font-weight: 700;
+}
+
+.event-calendar__day--event span {
   transition: background 160ms ease, color 160ms ease;
 }
 
@@ -481,8 +484,25 @@ b {
 
 .event-calendar__day--event:hover,
 .event-calendar__day--event:focus-visible {
-  background: rgba(2, 86, 51, 0.24);
+  background: rgba(2, 86, 51, 0.14);
   outline: none;
+}
+
+.event-calendar__day--event:not(.event-calendar__day--start):not(.event-calendar__day--end):hover span,
+.event-calendar__day--event:not(.event-calendar__day--start):not(.event-calendar__day--end):focus-visible span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(2, 86, 51, 0.2);
+}
+
+.event-calendar__day--start:hover span,
+.event-calendar__day--start:focus-visible span,
+.event-calendar__day--end:hover span,
+.event-calendar__day--end:focus-visible span {
+  background: var(--contabilidade-acao-hover);
 }
 
 .event-calendar__day--event:focus-visible span {
