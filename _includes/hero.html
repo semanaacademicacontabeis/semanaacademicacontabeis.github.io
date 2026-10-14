@@ -5,8 +5,8 @@
       <h1>{{ page.hero_title }}</h1>
       <p class="hero__lead">{{ page.hero_lead }}</p>
       <div class="hero__actions">
-        <a class="button button--primary" href="#detalhes">
-          {% if page.home %}Explorar programação{% else %}Ver detalhes{% endif %}
+        <a class="button button--primary" href="{% if page.home %}{{ '/programacao/' | relative_url }}{% else %}#detalhes{% endif %}">
+          {% if page.home %}Ver programação completa{% else %}Ver detalhes{% endif %}
           <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true">
         </a>
         {% unless page.home %}

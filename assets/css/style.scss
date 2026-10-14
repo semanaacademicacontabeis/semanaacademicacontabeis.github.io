@@ -361,7 +361,7 @@ b {
 .hero h1 {
   max-width: 920px;
   font-size: clamp(48px, 4.5vw, 64px);
-  line-height: 1.34;
+  line-height: 1.08;
 }
 
 .hero__lead {
@@ -1054,7 +1054,7 @@ b {
   .hero--home .hero__inner { gap: 16px; padding: 38px 24px 40px; }
   .hero__copy { gap: 16px; }
   .eyebrow--pill { width: 100%; min-width: 0; padding: 7px 11px; font-size: 12px; }
-  .hero h1 { font-size: 40px; line-height: 1.32; }
+  .hero h1 { font-size: 40px; line-height: 1.12; }
   .hero__lead { font-size: 18px; line-height: 25px; }
   .hero__actions .button--ghost { display: none; }
   .hero__date-card { min-height: 190px; padding: 28px; border-radius: 22px; }
