@@ -22,7 +22,9 @@
     {% include header.html %}
     <main id="conteudo">
       {{ content }}
-      {% include realizacao.html %}
+      {% if page.nav == 'inicio' or page.nav == 'programacao' %}
+        {% include realizacao.html %}
+      {% endif %}
     </main>
     {% include footer.html %}
     <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
