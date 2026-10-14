@@ -995,8 +995,9 @@ b {
 
 .realization__inner {
   display: grid;
-  justify-items: start;
+  justify-items: center;
   gap: 20px;
+  text-align: center;
 }
 
 .realization h2 {
@@ -1023,6 +1024,8 @@ b {
 .realization img {
   width: 100%;
   height: auto;
+  background: transparent;
+  mix-blend-mode: multiply;
 }
 
 .site-footer {
