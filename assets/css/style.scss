@@ -1130,11 +1130,12 @@ b {
 .realization__link {
   display: block;
   width: min(92%, 1040px);
-  transition: opacity 160ms ease;
+  transition: transform 180ms ease;
 }
 
-.realization__link:hover {
-  opacity: 0.82;
+.realization__link:hover,
+.realization__link:focus-visible {
+  transform: translateY(-4px) scale(1.01);
 }
 
 .realization__link:focus-visible {
