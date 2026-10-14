@@ -1004,8 +1004,24 @@ b {
   line-height: 1.25;
 }
 
-.realization img {
+.realization__link {
+  display: block;
   width: min(100%, 1120px);
+  transition: opacity 160ms ease;
+}
+
+.realization__link:hover {
+  opacity: 0.82;
+}
+
+.realization__link:focus-visible {
+  border-radius: 8px;
+  outline: 3px solid var(--cyan);
+  outline-offset: 6px;
+}
+
+.realization img {
+  width: 100%;
   height: auto;
 }
 
