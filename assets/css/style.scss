@@ -425,14 +425,6 @@ b {
   line-height: 1.1;
 }
 
-.event-calendar__header > span {
-  color: var(--navy);
-  font-family: "Poppins", sans-serif;
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 1;
-}
-
 .event-calendar__weekdays,
 .event-calendar__days {
   display: grid;
@@ -1213,7 +1205,6 @@ b {
   .hero__calendar-card { padding: 24px 20px; border-radius: 22px; }
   .event-calendar { gap: 16px; }
   .event-calendar__header h2 { font-size: 28px; }
-  .event-calendar__header > span { font-size: 26px; }
   .event-calendar__day { height: 38px; font-size: 13px; }
   .event-calendar__day--start span,
   .event-calendar__day--end span { width: 32px; height: 32px; }
