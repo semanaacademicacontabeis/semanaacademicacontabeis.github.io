@@ -13,14 +13,13 @@
 
     <nav class="primary-nav" id="primary-navigation" aria-label="Navegação principal" data-primary-nav>
       <a href="{{ '/' | relative_url }}" {% if current == 'inicio' %}aria-current="page"{% endif %}>Início</a>
-      <a href="{{ '/programacao/' | relative_url }}" {% if current == 'programacao' %}aria-current="page"{% endif %}>Programação</a>
       <a href="https://forms.gle/Ggj8QyBHZRV2E5ja9" target="_blank" rel="noopener noreferrer">Inscrições</a>
       <a href="{{ '/comissao-organizadora/' | relative_url }}" {% if current == 'comissao' %}aria-current="page"{% endif %}>Comissão</a>
       <a href="{{ '/certificado/' | relative_url }}" {% if current == 'certificado' %}aria-current="page"{% endif %}>Certificado</a>
       <a href="{{ '/contato/' | relative_url }}" {% if current == 'contato' %}aria-current="page"{% endif %}>Contato</a>
 
-      <a class="button button--primary nav-cta" href="{{ '/programacao/' | relative_url }}">
-        Ver agenda <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true">
+      <a class="button button--primary nav-cta" href="{{ '/programacao/' | relative_url }}" {% if current == 'programacao' %}aria-current="page"{% endif %}>
+        Conferir Programação <img src="{{ '/assets/images/arrow-right.svg' | relative_url }}" alt="" aria-hidden="true">
       </a>
     </nav>
   </div>
