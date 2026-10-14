@@ -748,6 +748,7 @@ b {
 }
 
 .day-card {
+  scroll-margin-top: 24px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);

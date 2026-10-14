@@ -37,5 +37,29 @@
   document.querySelectorAll('[data-switcher="schedule"] [data-switch]').forEach((button) => {
     button.addEventListener('click', () => activateGroup(button, '[data-schedule-panel]', 'schedulePanel'));
   });
+
+  const scrollToScheduleDay = () => {
+    if (!/^#dia-(19|20|21|22|23)$/.test(window.location.hash)) return;
+
+    const target = document.querySelector(window.location.hash);
+    if (!target) return;
+
+    const root = document.documentElement;
+    const previousScrollBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    target.scrollIntoView({ block: 'start' });
+
+    window.requestAnimationFrame(() => {
+      root.style.scrollBehavior = previousScrollBehavior;
+    });
+  };
+
+  if (document.readyState === 'complete') {
+    window.requestAnimationFrame(scrollToScheduleDay);
+  } else {
+    window.addEventListener('load', () => window.requestAnimationFrame(scrollToScheduleDay), { once: true });
+  }
+
+  window.addEventListener('hashchange', scrollToScheduleDay);
 })();
 
