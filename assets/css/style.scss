@@ -529,11 +529,17 @@ b {
   line-height: 1.36;
 }
 
-.section__heading > p:last-child {
+.section__heading > p:last-child,
+.section__description {
   max-width: 900px;
   color: var(--muted);
   font-size: 19px;
   line-height: 27px;
+}
+
+.section__description {
+  display: grid;
+  gap: 14px;
 }
 
 .metrics {
@@ -1246,7 +1252,8 @@ b {
   .section { padding: 36px 20px; }
   .section__heading { gap: 16px; margin-bottom: 26px; }
   .section__heading h2 { font-size: 33px; line-height: 1.32; }
-  .section__heading > p:last-child { font-size: 17px; line-height: 24px; }
+  .section__heading > p:last-child,
+  .section__description { font-size: 17px; line-height: 24px; }
   .metrics,
   .card-grid,
   .card-grid--four { grid-template-columns: 1fr; }
