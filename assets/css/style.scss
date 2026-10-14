@@ -1069,6 +1069,22 @@ b {
   font-weight: 700;
 }
 
+.contact-details__instagram,
+.contact-details__instagram a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-details__instagram-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  background: currentColor;
+  -webkit-mask: url("../images/instagram.svg") center / contain no-repeat;
+  mask: url("../images/instagram.svg") center / contain no-repeat;
+}
+
 .status-panel h3 {
   font-size: 32px;
 }
