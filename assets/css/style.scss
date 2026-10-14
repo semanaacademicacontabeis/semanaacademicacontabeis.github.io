@@ -43,8 +43,9 @@ body {
   margin: 0;
   background: var(--canvas);
   color: var(--ink);
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
 }
@@ -71,16 +72,23 @@ summary {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
 
 h1,
 h2,
-h3 {
-  font-family: "Volkhov", Georgia, serif;
-  font-weight: 700;
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
   text-wrap: balance;
+}
+
+strong,
+b {
+  font-weight: inherit;
 }
 
 .shell {
@@ -152,7 +160,7 @@ h3 {
   max-width: 140px;
   color: var(--navy);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 17px;
   text-transform: uppercase;
@@ -173,13 +181,13 @@ h3 {
   padding: 12px 2px;
   color: var(--ink);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   white-space: nowrap;
 }
 
 .primary-nav a[aria-current="page"] {
   color: var(--blue);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .primary-nav > a:not(.button)::after {
@@ -216,7 +224,7 @@ h3 {
   color: var(--white);
   cursor: pointer;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -257,7 +265,7 @@ h3 {
   color: var(--navy);
   cursor: pointer;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 23px;
   white-space: nowrap;
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
@@ -330,7 +338,7 @@ h3 {
 .eyebrow {
   color: var(--cyan);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.06em;
   line-height: 19px;
   text-transform: uppercase;
@@ -384,9 +392,9 @@ h3 {
 
 .hero__date-card span {
   color: var(--navy);
-  font-family: "Volkhov", Georgia, serif;
+  font-family: "Poppins", sans-serif;
   font-size: clamp(64px, 6vw, 90px);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
 }
 
@@ -401,7 +409,7 @@ h3 {
   margin-top: 18px;
   color: var(--muted);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .hero:not(.hero--home) .hero__date-card {
@@ -458,15 +466,16 @@ h3 {
 .metric strong {
   display: block;
   color: var(--blue);
-  font-family: "Volkhov", Georgia, serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
+  font-weight: 800;
   line-height: 48px;
 }
 
 .metric span {
   color: var(--muted);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .card-grid {
@@ -505,7 +514,7 @@ h3 {
 .card__eyebrow {
   color: var(--cyan);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.08em;
   line-height: 19px;
   text-transform: uppercase;
@@ -682,7 +691,7 @@ h3 {
 .day-card__header > span {
   color: var(--muted);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -782,7 +791,7 @@ h3 {
 .daily-event__time {
   color: var(--cyan);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.06em;
   line-height: 20px;
   text-transform: uppercase;
@@ -791,8 +800,9 @@ h3 {
 .daily-event h4 {
   margin: 0;
   color: var(--navy);
-  font-family: "Volkhov", Georgia, serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
+  font-weight: 800;
   line-height: 1.35;
 }
 
@@ -833,7 +843,7 @@ h3 {
 .schedule-card__details dt {
   color: var(--cyan);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .schedule-card__details dd {
@@ -859,7 +869,7 @@ h3 {
   color: var(--blue);
   cursor: pointer;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .switcher button:hover,
@@ -880,8 +890,9 @@ h3 {
 }
 
 .day-switcher strong {
-  font-family: "Volkhov", Georgia, serif;
+  font-family: "Poppins", sans-serif;
   font-size: 27px;
+  font-weight: 800;
 }
 
 .day-switcher span {
@@ -974,7 +985,7 @@ h3 {
 
 .site-footer nav a {
   color: var(--white);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .site-footer nav a:hover,
