@@ -640,11 +640,9 @@ b {
 }
 
 .partner-card--cafeh::before {
-  width: 42%;
-  aspect-ratio: 1;
-  height: auto;
-  background-size: cover;
-  clip-path: circle(47% at 50% 50%);
+  width: 60%;
+  height: 70%;
+  background-size: contain;
 }
 
 .partner-card--portrait::before {
