@@ -1052,7 +1052,12 @@ b {
 
 .status-panel__copy {
   display: grid;
-  gap: 12px;
+  align-content: start;
+  gap: 6px;
+}
+
+.status-panel__copy h3 {
+  line-height: 1.15;
 }
 
 .contact-details {
@@ -1112,6 +1117,10 @@ b {
   min-width: 0;
   align-items: center;
   gap: 14px;
+}
+
+.instagram-profile__header > div {
+  min-width: 0;
 }
 
 .instagram-profile__icon {
@@ -1378,7 +1387,12 @@ b {
   .switcher button { flex: 0 0 auto; }
   .callout { align-items: flex-start; flex-direction: column; }
   .status-panel { grid-template-columns: 1fr; padding: 24px 20px; }
-  .instagram-profile h3 { white-space: normal; }
+  .instagram-profile { padding-inline: 20px; }
+  .instagram-profile h3 {
+    font-size: clamp(13px, 3.8vw, 16px);
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
 
   .realization { padding: 32px 20px; }
   .realization__inner { gap: 16px; }
